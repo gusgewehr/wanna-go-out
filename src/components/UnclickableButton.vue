@@ -31,9 +31,11 @@ function randomPos(event) {
 </script>
 
 <template>
+  <a href="https://www.youtube.com/watch?v=Q0G-SThjW0c">
   <button class="affirmative button" :class="{ changeColor: count > 1}" :style="{width: calculatedWidth+'px', height:calculatedHeight+'px'} ">
     {{ affirmativeMessage }}
   </button>
+</a>
 
   <button class="unclickable button" @mouseover="randomPos()" @mousedown="randomPos()"  v-bind:style="{ position:positionUncBtn, top: posY+'px', right: posX+'px'}">
     Não
