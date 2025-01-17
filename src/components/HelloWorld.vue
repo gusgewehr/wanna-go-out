@@ -4,6 +4,10 @@ defineProps({
     type: String,
     required: true,
   },
+  msg2: {
+    type: String,
+    required: true,
+  },
 })
 </script>
 
@@ -11,7 +15,7 @@ defineProps({
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      Cadastre-se gratuitamente e ganhe benefícios
+      {{ msg2 }}
     </h3>
   </div>
 </template>
